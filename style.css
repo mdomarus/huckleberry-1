@@ -1,12 +1,76 @@
+:root {
+  --green: hsl(160deg, 100%, 30%);
+  --gold-lighter: hsl(45deg, 100%, 50%);
+  --gold-darker: hsl(45deg, 100%, 40%);
+
+  --black: hsl(0deg, 0%, 0%);
+  --gray-very-dark: hsl(0deg, 0%, 10%);
+  --gray-dark: hsl(0deg, 0%, 30%);
+  --gray-medium: hsl(0deg, 0%, 40%);
+  --gray-light: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
+
+  --block-padding: 1.5rem;
+}
+
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  color: var(--gray-very-dark);
 }
 
-/* Add styles here! */
+h1,
+h2 {
+  color: var(--black);
+}
+
+strong {
+  color: var(--green);
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.intro-chunk {
+  max-width: 400px;
+  padding: var(--block-padding);
+  font-size: 1.25rem;
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main {
+  margin: 1rem 0;
+  padding: 4rem 0;
+  background: var(--gray-light);
+  border-top: 8px solid var(--gray-medium);
+}
+
+.card {
+  background: var(--white);
+  padding: var(--block-padding);
+  border-bottom: 8px solid var(--gray-medium);
+}
+
+.indented-heading {
+  background: var(--gold-lighter);
+  border-bottom: 8px solid var(--gold-darker);
+  margin: -0.5rem 0 0 -3rem;
+  padding: 1rem 3rem;
+  width: fit-content;
+}
