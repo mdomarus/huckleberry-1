@@ -38,9 +38,17 @@ p {
   margin-bottom: 1em;
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+
 h1 {
   font-size: 2rem;
   margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 1.25rem;
 }
 
 .intro-chunk {
@@ -50,12 +58,12 @@ h1 {
 }
 
 .max-width-wrapper {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
 main {
-  margin: 1rem 0;
+  margin: 2rem 0;
   padding: 4rem 0;
   background: var(--gray-light);
   border-top: 8px solid var(--gray-medium);
@@ -70,7 +78,7 @@ main {
 .indented-heading {
   background: var(--gold-lighter);
   border-bottom: 8px solid var(--gold-darker);
-  margin: -0.5rem 0 0 -3rem;
-  padding: 1rem 3rem;
+  margin: -1rem 0 0 -2.5rem;
+  padding: 1rem 2.5rem;
   width: fit-content;
 }
